@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Contact Worldstar Swagg for enquiries and collaborations.">
-  <title>Contact Us | Worldstar Swagg</title>
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="canonical" href="https://YOUR-GITHUB-USERNAME.github.io/Worldstar-Swagg/contact.html">
+  <meta name="description" content="Contact Worldstar Swagg with general messages, feedback, collaboration ideas and brand questions.">
+  <title>Contact Worldstar Swagg | General Enquiries</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,16 +15,16 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Worldstar Swagg home">WORLDSTAR <span>SWAGG</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" onclick="const n=document.getElementById('primary-nav'); const open=this.getAttribute('aria-expanded')==='true'; this.setAttribute('aria-expanded',String(!open)); n.classList.toggle('is-open',!open);">Menu ☰</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu ☰</button>
       <nav id="primary-nav" class="nav" aria-label="Main navigation">
-        <a href="index.html">Home</a><a href="about-us.html">About Us</a><a href="products.html">Products &amp; Services</a><a href="gallery.html">Gallery</a><a href="news.html">News &amp; Updates</a><a href="contact.html">Contact Us</a>
+        <a href="index.html">Home</a><a href="about-us.html">About Us</a><a href="products.html">Products &amp; Services</a><a href="gallery.html">Gallery</a><a href="news.html">News &amp; Updates</a><a href="contact.html">Contact Us</a><a href="enquiry.html">Enquiry</a>
       </nav>
     </div>
   </header>
   <main id="main">
     <section class="page-banner"><div class="container"><p class="eyebrow">Say hello</p><h1>Contact Us</h1><p>Have a question, collaboration idea or product enquiry?</p></div></section>
-    <section class="container section contact-layout"><div><h2>Let's connect.</h2><p>Use the form to demonstrate how visitors could contact the brand. This coursework version does not send or store messages.</p><div class="contact-detail"><span>Email</span><a href="mailto:omolemothage94@gmail.com">omolemothage94@gmail.com</a></div><div class="contact-detail"><span>Brand hashtag</span><strong>#WorldstarSwagg</strong></div></div>
-      <form class="contact-form" id="contact-form"><div class="form-field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div><div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="form-field"><label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea></div><button class="button" type="submit">Send enquiry</button><p id="form-message" class="form-message" role="status" hidden>This is a demonstration form. Your message has not been sent.</p></form>
+    <section class="container section contact-layout"><div><h2>Let's connect.</h2><p>Use this form for general messages, feedback or other questions. Required fields are checked before the message is submitted.</p><div class="contact-detail"><span>Email</span><a href="mailto:omolemothage94@gmail.com">omolemothage94@gmail.com</a></div><div class="contact-detail"><span>Brand hashtag</span><strong>#WorldstarSwagg</strong></div></div>
+      <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/omolemothage94@gmail.com" method="POST"><input type="hidden" name="_subject" value="New Worldstar Swagg website message"><input type="hidden" name="_template" value="table"><div class="form-field"><label for="contact-name">Your name</label><input id="contact-name" name="name" autocomplete="name" minlength="2" maxlength="60" required></div><div class="form-field"><label for="contact-email">Email address</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="100" required></div><div class="form-field"><label for="contact-phone">Phone number (optional)</label><input id="contact-phone" name="phone" type="tel" pattern="[0-9+() -]{7,20}" title="Enter a valid phone number using 7 to 20 digits or phone symbols."></div><div class="form-field"><label for="message-type">Type of message</label><select id="message-type" name="message_type" required><option value="">Choose a message type</option><option>General question</option><option>Feedback</option><option>Collaboration</option><option>Other</option></select></div><div class="form-field"><label for="contact-message">Your message</label><textarea id="contact-message" name="message" rows="5" minlength="10" maxlength="1000" required></textarea></div><button class="button" type="submit">Send message</button><p id="contact-status" class="form-message" role="status" aria-live="polite" hidden></p></form>
     </section>
   </main>
   <footer class="site-footer">
@@ -30,6 +33,6 @@
       <p class="footer-tag">#WorldstarSwagg · Swag that makes you a Worldstar</p>
     </div>
   </footer>
-  <script src="js/site.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>

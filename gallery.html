@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="View Worldstar Swagg brand artwork and clothing mock-ups.">
-  <title>Gallery | Worldstar Swagg</title>
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b0b0b">
+  <link rel="canonical" href="https://YOUR-GITHUB-USERNAME.github.io/Worldstar-Swagg/gallery.html">
+  <meta name="description" content="View the Worldstar Swagg gallery featuring streetwear T-shirt mock-ups, graphic artwork and brand visuals.">
+  <title>Worldstar Swagg Gallery | Streetwear Artwork</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,19 +15,19 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="Worldstar Swagg home">WORLDSTAR <span>SWAGG</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" onclick="const n=document.getElementById('primary-nav'); const open=this.getAttribute('aria-expanded')==='true'; this.setAttribute('aria-expanded',String(!open)); n.classList.toggle('is-open',!open);">Menu ☰</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu ☰</button>
       <nav id="primary-nav" class="nav" aria-label="Main navigation">
-        <a href="index.html">Home</a><a href="about-us.html">About Us</a><a href="products.html">Products &amp; Services</a><a href="gallery.html">Gallery</a><a href="news.html">News &amp; Updates</a><a href="contact.html">Contact Us</a>
+        <a href="index.html">Home</a><a href="about-us.html">About Us</a><a href="products.html">Products &amp; Services</a><a href="gallery.html">Gallery</a><a href="news.html">News &amp; Updates</a><a href="contact.html">Contact Us</a><a href="enquiry.html">Enquiry</a>
       </nav>
     </div>
   </header>
   <main id="main">
     <section class="page-banner"><div class="container"><p class="eyebrow">Visual inspiration</p><h1>Gallery</h1><p>A look at the Worldstar Swagg design direction.</p></div></section>
     <section class="container section"><div class="gallery-grid">
-      <figure class="gallery-item gallery-large"><img src="images/First mockup - T-Shirt.png" alt="T-shirt design mock-up"><figcaption>T-shirt concept</figcaption></figure>
-      <figure class="gallery-item"><img src="images/First mockup - Artboard 2.png" alt="Alternate Worldstar Swagg artwork"><figcaption>Graphic concept</figcaption></figure>
-      <figure class="gallery-item"><img src="images/design by @safti_fx.jpg" alt="Worldstar Swagg brand design"><figcaption>Brand artwork</figcaption></figure>
-    </div></section>
+      <figure class="gallery-item gallery-large"><button class="gallery-open" type="button" aria-label="Enlarge T-shirt concept"><img src="images/First mockup - T-Shirt.png" alt="T-shirt design mock-up"></button><figcaption>T-shirt concept</figcaption></figure>
+      <figure class="gallery-item"><button class="gallery-open" type="button" aria-label="Enlarge graphic concept"><img src="images/First mockup - Artboard 2.png" alt="Alternate Worldstar Swagg artwork"></button><figcaption>Graphic concept</figcaption></figure>
+      <figure class="gallery-item"><button class="gallery-open" type="button" aria-label="Enlarge brand artwork"><img src="images/design by @safti_fx.jpg" alt="Worldstar Swagg brand design"></button><figcaption>Brand artwork</figcaption></figure>
+    </div><dialog class="lightbox" id="gallery-lightbox" aria-label="Expanded gallery image"><button class="lightbox-close" type="button" aria-label="Close image">×</button><img src="" alt=""><p class="lightbox-caption"></p></dialog></section>
   </main>
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -32,6 +35,6 @@
       <p class="footer-tag">#WorldstarSwagg · Swag that makes you a Worldstar</p>
     </div>
   </footer>
-  <script src="js/site.js"></script>
+  <script src="js/site.js" defer></script>
 </body>
 </html>
